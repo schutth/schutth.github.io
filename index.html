@@ -1,132 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html><head><base href="https://muconsa.com/"></base>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuconSA - Your 24/7 Technical Support Companion</title>
+    <title>Expert Technical Support Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #00429c;
+        }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #f9fafa, #e0e5ec);
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
         }
-        .container {
-            max-width: 1200px;
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
             text-align: center;
-            padding: 20px;
         }
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 20px;
-            width: 100%;
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 50px 0;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .intro {
-            margin: 50px 0;
-        }
-        .intro h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        .intro p {
-            font-size: 1.2rem;
-            line-height: 1.5;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .feature {
-            background-color: #fff;
+        .service-card {
+            background: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 300px;
-            margin: 10px;
-            padding: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
         }
-        .feature h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+        .service-card:hover {
+            transform: translateY(-10px);
         }
-        .contact {
-            background-color: #1f2937;
-            color: white;
-            padding: 20px;
-            width: 100%;
-            margin-top: 40px;
-        }
-        .contact h3 {
-            margin: 0 0 10px 0;
-        }
-        .contact a {
-            color: #f9a826;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        footer {
-            background-color: #f3f4f6;
-            padding: 10px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        footer p {
-            margin: 0;
-            font-size: 1.1rem;
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
         }
     </style>
+    <!-- SiteSpeakAI - Add ChatGPT to your website -->
+    <script type="text/javascript">(function(){d=document;s=d.createElement("script");s.src="https://sitespeak.ai/chatbots/2d238ae7-fca9-427e-863d-d273ccec1019.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!-- / SiteSpeakAI -->
 </head>
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <h1>MuconSA</h1>
-            <p>Your 24/7 Technical Support Companion</p>
+            <a class="navbar-brand" href="#">
+                <svg width="150" height="50" viewBox="0 0 300 100">
+                    <text x="10" y="70" font-family="Arial" font-size="50" fill="#0066cc">MuconSA</text>
+                </svg>
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a href="https://muconsa.com/services" class="nav-item nav-link">Services</a>
+                <a href="https://muconsa.com/contact" class="nav-item nav-link">Contact</a>
+                <a href="https://muconsa.com/support" class="nav-item nav-link btn btn-primary text-white">Get Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1>Technical Support Reimagined</h1>
+            <p class="lead">Fast, Reliable, and Comprehensive IT Solutions for Your Business by MuconSA</p>
+            <a href="https://muconsa.com/quote" class="btn btn-light btn-lg mt-3">Request a Quote</a>
         </div>
     </header>
 
-    <main class="container">
-        <section class="intro">
-            <h2>Welcome to MuconSA</h2>
-            <p>At MuconSA, we pride ourselves on delivering exceptional technical support solutions around the clock. Our team of dedicated professionals is always ready to solve your technical issues efficiently and effectively, ensuring that your business runs smoothly without any technical hitches.</p>
-        </section>
+    <section class="container services-grid">
+        <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Network Support</h3>
+            <p>Comprehensive network management and troubleshooting</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔒</div>
+            <h3>Cybersecurity</h3>
+            <p>Advanced protection against digital threats</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">☁️</div>
+            <h3>Cloud Solutions</h3>
+            <p>Seamless cloud infrastructure and migration</p>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="feature">
-                <h3>24/7 Availability</h3>
-                <p>We are here for you day and night, providing reliable support across all time zones.</p>
-            </div>
-            <div class="feature">
-                <h3>Expert Team</h3>
-                <p>Our highly trained professionals are equipped to handle even the toughest technical challenges.</p>
-            </div>
-            <div class="feature">
-                <h3>Custom Solutions</h3>
-                <p>We tailor our services to meet the specific needs of each client, ensuring personalized solutions.</p>
-            </div>
-        </section>
-
-        <section class="contact">
-            <h3>Contact Us</h3>
-            <p>Need assistance? Reach us anytime at <a href="mailto:support@muconsa.com">support@muconsa.com</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 MuconSA. All rights reserved.</p>
-      <!-- SiteSpeakAI - Add ChatGPT to your website -->
-                    <script type="text/javascript">(function(){d=document;s=d.createElement("script");s.src="https://sitespeak.ai/chatbots/2d238ae7-fca9-427e-863d-d273ccec1019.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-                    <!-- / SiteSpeakAI -->
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h4>Ready to Elevate Your IT Support?</h4>
+            <p>Contact us today and experience technology that works for you.</p>
+            <a href="https://muconsa.com/contact" class="btn btn-primary">Contact Us</a>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
